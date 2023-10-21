@@ -4,19 +4,9 @@ using str = std::string;
 
 int main()
 {
-    str name;
-    while (name.empty())
-    { // While x is true do y
-        std::getline(std::cin, name);
+    for(int i = 0; i <= 10; i++){ // First part says where to start, second part what to require before doing the for loop, third part is to increment by 1
+        std::cout << i << "\n";
     }
-    std::cout << name << "\n";
-
-    int age; // Same as while but first tries the code then while
-    do{
-        std::cin >> age;
-        std::cout << "Under 18";
-    } while (age <= 18);
-    std::cout << "Over 18";
 
     return 0;
 }
