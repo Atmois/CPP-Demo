@@ -1,8 +1,10 @@
 #include <iostream>
 
-int main() 
+std::string exampleGlobalVar= "Example"; // Global Variable that works in all functions.
 
-{
+int main() 
+{ // Anything within the main function is LOCAL, same applies if it is in any other function or namespace.
+
     // Int - Whole Number
     int x; // Decleration
     x = 73; // Assignment
