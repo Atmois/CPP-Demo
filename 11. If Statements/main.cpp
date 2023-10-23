@@ -8,13 +8,13 @@ int main()
     std::cout << "Age: ";
     std::cin >> age;
 
-    if(age >= 18){
+    if(age >= 18){ // Condition in () and process in {}
         std::cout << "18+";
     }
     else if(age < 0){
         std::cout << "Invalid Number for 'age'";
     }
-    else{
+    else{ // No conditions
         std::cout << "Under 18";
     }
 

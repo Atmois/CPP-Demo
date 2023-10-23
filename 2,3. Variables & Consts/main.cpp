@@ -20,10 +20,12 @@ int main()
     bool boolean = true;
 
     // String - A string lol
-    std::string userName = "Atmois";
+    std::string userName = "Atmois"; // See 5. Type Alias's for a way to shorten this
 
     // Consts - Can't change var
     const double pi = 3.14159;
+
+    std::cout << sizeof(x) << " bytes.\n"; // Shows how much storage space in bytes is taken up by a variable
 
     return 0;
 }
