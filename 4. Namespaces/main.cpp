@@ -1,5 +1,7 @@
 #include <iostream>
 
+using str = std::string; 
+
 namespace one
 {
     int x = 1;

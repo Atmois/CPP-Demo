@@ -25,7 +25,5 @@ int main()
     // Consts - Can't change var
     const double pi = 3.14159;
 
-    std::cout << sizeof(x) << " bytes.\n"; // Shows how much storage space in bytes is taken up by a variable
-
     return 0;
 }

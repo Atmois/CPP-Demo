@@ -25,7 +25,7 @@ int main() // Find more methods here -> https://cplusplus.com/reference/string/s
         name.insert(0, "!"); // Inserts somthing to a given point in a string
         std::cout << name << "\n";
 
-        name.erase(0, 1); // Removes all characters between 2 points (Example shows only first char.)
+        name.erase(0, 1); // Removes all characters between 2 indexes (Example shows only first char.)
         std::cout << name << "\n";
     }
 

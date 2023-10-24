@@ -10,7 +10,7 @@ int main()
 
     switch (month)
     {
-    case 1:
+    case 1: // Same as if month = 1
         std::cout << "Jan";
         break;
     case 2:
@@ -46,7 +46,7 @@ int main()
     case 12:
         std::cout << "Dec";
         break;
-    default:
+    default: // Else statement
         std::cout << "Invalid";
     }
     return 0;
