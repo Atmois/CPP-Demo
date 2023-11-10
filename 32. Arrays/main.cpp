@@ -44,7 +44,7 @@ int main() {
   std::cout << prices[3] << "\n";
 
   /*
-  To show all of an array you can do either of these for loops
+    To show all of an array you can do either of these for loops
   */
   for (int i = 0; i < size; i++) {
     std::cout << prices[i] << "\n";
@@ -57,7 +57,7 @@ int main() {
   }
 
   /*
-  Functions with arrays
+    Functions with arrays
   */
   double total = getTotal(prices, size);
   std::cout << "=\n"
@@ -65,7 +65,7 @@ int main() {
   std::cout << "\n\n";
 
   /*
-  Array Searching (Linear Search)
+    Array Searching (Linear Search)
   */
   int index;
   double value = 2.99;
@@ -79,7 +79,7 @@ int main() {
   }
 
   /*
-  Array Sorting (Bubble Sort)
+    Array Sorting (Bubble Sort)
   */
   sortArray(prices, size);
   for (double price : prices) {
@@ -87,7 +87,7 @@ int main() {
   }
 
   /*
-    e
+    Fill() Function
   */
 
   return 0;
