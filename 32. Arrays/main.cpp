@@ -16,7 +16,8 @@ double getTotal(double prices[], int size)
 double searchArray(double prices[], int size, double value)
 {
 
-  for (int i = 0; i < size; i++) // Checks every value in the array for the value
+  for (int i = 0; i < size;
+       i++) // Checks every value in the array for the value
   {
     if (prices[i] == value)
     {
@@ -33,7 +34,8 @@ void sortArray(double prices[], int size)
   {
     for (int j = 0; j < size - 1; j++)
     {
-      if (prices[j] > prices[j + 1])
+      if (prices[j] >
+          prices[j + 1])
       { // Change to less than to get in descending order
         tempValue = prices[j];
         prices[j] = prices[j + 1];
@@ -47,7 +49,8 @@ int main()
 {
   double prices[] = {1.99, 5.99, 7.99, 3.99, 8.99,
                      2.99, 4.99, 6.99, 9.99}; // Must all be the same data type
-  int size = sizeof(prices) / sizeof(prices[0]); // Get amount of idex's in the array
+  int size =
+      sizeof(prices) / sizeof(prices[0]); // Get amount of idex's in the array
 
   std::cout << prices[0] << "\n"; // Index starts from 0
   std::cout << prices[3] << "\n";
@@ -104,6 +107,7 @@ int main()
   /*
     Fill() Function
   */
+  str items[10];
 
   return 0;
 }

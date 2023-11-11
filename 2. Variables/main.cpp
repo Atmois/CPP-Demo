@@ -7,8 +7,8 @@ int main()
   // namespace.
 
   // Int - Whole Number
-  int x; // Decleration
-  x = 73; // Assignment
+  int x;      // Decleration
+  x = 73;     // Assignment
   int y = 37; // Decleration & Assignment
 
   // Double - Decimals

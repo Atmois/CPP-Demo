@@ -23,7 +23,8 @@ int main()
   std::cin >> num1;
   std::cin >> num2;
 
-  double ans = add(num1, num2); // Ensure you set a function = to a var if taking a return
+  double ans = add(
+      num1, num2); // Ensure you set a function = to a var if taking a return
   std::cout << ans;
 
   return 0;
