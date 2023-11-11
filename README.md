@@ -8,6 +8,7 @@ Any practise programs were excluded and the following changes to the structure w
 
 - 'Consts(3)' was put under 'Variables(2)'
 - 'Variable Scope(29)' was put under 'Variables(2)'
+- 'Consts paramets(45) info was put into 'Variables(2)'
 <br> ㅤ
 - 'Do While Loops(19)' was put under 'While Loops(18)'
 - 'Return(27)' was put under 'Functions(26)'

@@ -23,8 +23,12 @@ int main()
   // String - A string lol
   std::string userName = "Atmois"; // See 5. Type Alias's for a way to shorten this
 
-  // Consts - Can't change var
+  // Consts - Can't change var 
   const double pi = 3.14159;
+  /*
+  When passing into functions as parameters make sure to put const in it
+  This is especially useful when it is a memory address or pointer
+  */
 
   return 0;
 }
