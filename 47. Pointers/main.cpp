@@ -1,10 +1,13 @@
 #include <iostream>
 
-/* A pointer is a variable that stores a memory address of a variable
+/* 
+A pointer is a variable that stores a memory address of a variable
 - Can be useful if needing to say where somthing is rather than always moving to it
 & Address-of Operator
 * Dereference Operator
 
+Null Value - Special value that means somthing has no value, a null pointer (nullptr) is a pointer not pointing at an address
+It is good practise to always use null pointers if not assiging a value straight away
 */
 
 int main()
@@ -16,6 +19,14 @@ int main()
     std::string foods[3] = {"Pizza", "Pasta", "Burger"};
     std::string *pFoods = foods;  // You don't need '&' for arrays
     std::cout << *pFoods << "\n"; // Gives out first element in the array
+
+    int *pointer = nullptr; // Use this to make sure there are no issues, you can then reference it or assign values later on
+
+    if(pointer == nullptr) // Check if pointer is null
+    {
+        std::cout << "Null Pointer";
+    }
+
 
     return 0;
 }
