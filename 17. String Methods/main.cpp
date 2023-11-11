@@ -1,21 +1,24 @@
 #include <iostream>
 
-using str = std::string; 
+using str = std::string;
 
 int main() // Find more methods here -> https://cplusplus.com/reference/string/string/
 {
     str name;
 
     std::getline(std::cin, name);
-    
-    if(name.empty()){ // Checks if var is too long
+
+    if (name.empty())
+    { // Checks if var is too long
         std::cout << "No Input";
     }
-    else if(name.length() > 12){ // Checks legnth of string
+    else if (name.length() > 12)
+    { // Checks legnth of string
         std::cout << "Too Long";
         name.clear(); // Clear string
     }
-    else{
+    else
+    {
         name.append("!"); // Appends somthing to the end of the string
 
         std::cout << name.at(0) << "\n"; // Gets the value at the position in the string

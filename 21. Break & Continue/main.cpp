@@ -5,15 +5,17 @@ using str = std::string;
 int main()
 {
 
-    for (int i = 1; i <= 25; i++)
+  for (int i = 1; i <= 25; i++)
+  {
+    if (i == 20)
     {
-        if(i == 20){
-            break; // Does not carry on with the loop
-        }
-        else if (i == 13){
-            continue; // Skips that iteration
-        }
-        std::cout << i << "\n";
+      break; // Does not carry on with the loop
     }
-    return 0;
+    else if (i == 13)
+    {
+      continue; // Skips that iteration
+    }
+    std::cout << i << "\n";
+  }
+  return 0;
 }

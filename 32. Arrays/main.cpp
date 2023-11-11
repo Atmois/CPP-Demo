@@ -2,7 +2,8 @@
 
 using str = std::string;
 
-double getTotal(double prices[], int size) {
+double getTotal(double prices[], int size)
+{
   double total = 0;
   for (int i = 0; i < size; i++) // Adds all the numbers within the array
   {
@@ -12,22 +13,28 @@ double getTotal(double prices[], int size) {
   return total;
 }
 
-double searchArray(double prices[], int size, double value) {
+double searchArray(double prices[], int size, double value)
+{
 
   for (int i = 0; i < size; i++) // Checks every value in the array for the value
   {
-    if (prices[i] == value) {
+    if (prices[i] == value)
+    {
       return i;
     }
   }
   return -1;
 }
 
-void sortArray(double prices[], int size) {
+void sortArray(double prices[], int size)
+{
   double tempValue;
-  for (int i = 0; i < size - 1; i++) {
-    for (int j = 0; j < size - 1; j++) {
-      if (prices[j] > prices[j + 1]) { // Change to less than to get in descending order
+  for (int i = 0; i < size - 1; i++)
+  {
+    for (int j = 0; j < size - 1; j++)
+    {
+      if (prices[j] > prices[j + 1])
+      { // Change to less than to get in descending order
         tempValue = prices[j];
         prices[j] = prices[j + 1];
         prices[j + 1] = tempValue;
@@ -36,8 +43,10 @@ void sortArray(double prices[], int size) {
   }
 }
 
-int main() {
-  double prices[] = {1.99, 5.99, 7.99, 3.99, 8.99, 2.99, 4.99, 6.99, 9.99}; // Must all be the same data type
+int main()
+{
+  double prices[] = {1.99, 5.99, 7.99, 3.99, 8.99,
+                     2.99, 4.99, 6.99, 9.99}; // Must all be the same data type
   int size = sizeof(prices) / sizeof(prices[0]); // Get amount of idex's in the array
 
   std::cout << prices[0] << "\n"; // Index starts from 0
@@ -46,13 +55,15 @@ int main() {
   /*
     To show all of an array you can do either of these for loops
   */
-  for (int i = 0; i < size; i++) {
+  for (int i = 0; i < size; i++)
+  {
     std::cout << prices[i] << "\n";
   }
   std::cout << "\n";
 
   // For Each Loop
-  for (double price : prices) {
+  for (double price : prices)
+  {
     std::cout << price << "\n";
   }
 
@@ -71,9 +82,12 @@ int main() {
   double value = 2.99;
   index = searchArray(prices, size, value);
 
-  if (index != -1) {
+  if (index != -1)
+  {
     std::cout << "Index: " << index << "\n";
-  } else {
+  }
+  else
+  {
     std::cout << "Not found"
               << "\n";
   }
@@ -82,7 +96,8 @@ int main() {
     Array Sorting (Bubble Sort)
   */
   sortArray(prices, size);
-  for (double price : prices) {
+  for (double price : prices)
+  {
     std::cout << price << " ";
   }
 

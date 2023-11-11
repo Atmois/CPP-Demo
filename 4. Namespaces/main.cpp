@@ -1,23 +1,23 @@
 #include <iostream>
 
-using str = std::string; 
+using str = std::string;
 
 namespace one
 {
-    int x = 1;
+int x = 1;
 }
 
 namespace two
 {
-    int x = 2;
+int x = 2;
 }
 
 int main()
 {
-    using namespace two; // Anything below is in 'two' namespace
+  using namespace two; // Anything below is in 'two' namespace
 
-    int x = 0;
-    std::cout << one::x; // Uses 'x' from 'one' namespace
+  int x = 0;
+  std::cout << one::x; // Uses 'x' from 'one' namespace
 
-    return 0;
+  return 0;
 }

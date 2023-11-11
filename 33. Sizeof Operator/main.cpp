@@ -1,12 +1,14 @@
 #include <iostream>
 
-using str = std::string; 
+using str = std::string;
 
-int main() 
-{ 
-    int x = 73; 
+int main()
+{
+  int x = 73;
 
-    std::cout << sizeof(x) << " bytes.\n"; // Shows how much storage space in bytes is taken up by a variable
+  std::cout << sizeof(x)
+            << " bytes." // Shows how much storage space in bytes is taken up by a variable
+            << "\n";
 
-    return 0;
+  return 0;
 }
