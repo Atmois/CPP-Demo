@@ -18,6 +18,8 @@ Any practise programs were excluded and the following changes to the structure w
 - 'Searching an Array(37)' was put under 'Arrays(32)'
 - 'Sorting an Array(38)' was put under 'Arrays(32)'
 - 'Fill(39)' was put under 'Arrays(32)'
+- 'Filling Arrays with Inputs(40)' was put under 'Arrays(32)'
+- 'Multi-Dimension Array(41)' was put under 'Arrays(32)'
 <br> ㅤ
 - 'Type Conversion(7)' was excluded
 - 'Nested Loops(22)' was excluded

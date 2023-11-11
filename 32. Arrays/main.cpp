@@ -47,16 +47,14 @@ void sortArray(double prices[], int size)
 
 int main()
 {
-  double prices[] = {1.99, 5.99, 7.99, 3.99, 8.99,
-                     2.99, 4.99, 6.99, 9.99}; // Must all be the same data type
-  int size =
-      sizeof(prices) / sizeof(prices[0]); // Get amount of idex's in the array
+  double prices[10] = {1.99, 5.99, 7.99, 3.99, 8.99, 2.99, 4.99, 6.99, 9.99}; // Must all be the same data type - [10] sets list length limit to 10 - This CAN NOT be changed during runtime
+  int size = sizeof(prices) / sizeof(prices[0]);                              // Get amount of index's in the array
 
   std::cout << prices[0] << "\n"; // Index starts from 0
   std::cout << prices[3] << "\n";
 
   /*
-    To show all of an array you can do either of these for loops
+  To show all of an array you can do either of these for loops
   */
   for (int i = 0; i < size; i++)
   {
@@ -71,7 +69,7 @@ int main()
   }
 
   /*
-    Functions with arrays
+  Functions with arrays
   */
   double total = getTotal(prices, size);
   std::cout << "=\n"
@@ -79,7 +77,7 @@ int main()
   std::cout << "\n\n";
 
   /*
-    Array Searching (Linear Search)
+  Array Searching (Linear Search)
   */
   int index;
   double value = 2.99;
@@ -96,18 +94,79 @@ int main()
   }
 
   /*
-    Array Sorting (Bubble Sort)
+  Array Sorting (Bubble Sort)
   */
   sortArray(prices, size);
   for (double price : prices)
   {
     std::cout << price << " ";
   }
+  std::cout << "\n"
+            << "\n";
 
   /*
-    Fill() Function
+  Fill() Function
   */
-  str items[10];
+  const int itemsLimit = 10;
+  str items[itemsLimit];
 
+  fill(items, items + itemsLimit, "Placeholder"); // Where to being, where to end, what to fill
+  for (str item : items)
+  {
+    std::cout << item << " ";
+  }
+  std::cout << "\n"
+            << "\n";
+
+  /*
+  Put inputs into arrays
+  */
+  str foods[5];
+  str foodsTemp;
+  int foodSize = sizeof(foods) / sizeof(foods[0]);
+  for (int i = 0; i < foodSize; i++)
+  {
+    std::cout << "Food/Exit(/): ";
+    std::getline(std::cin, foodsTemp); // Assigns to temp value to check if user wants to quit program or continue
+    if (foodsTemp == "/")
+    {
+      break;
+    }
+    else
+    {
+      foods[i] = foodsTemp;
+    }
+  }
+
+  for (int i = 0; !foods[i].empty(); i++) // Does not display empty elements
+  {
+    std::cout << foods[i] << " ";
+  }
+  std::cout << "\n"
+            << "\n";
+
+  /*
+  Multi-Dimension Arrays (2D)
+  */
+  str cars[][3] = {// [Row Size][Collumn Size] // Only collumn size required
+                   {"Mustang", "Escape", "F150"},
+                   {"Corvette", "Equinox", "Silverado"},
+                   {"Challanger", "Durang", "Ram"}};
+
+  std::cout << cars[0][0] << "\n"; // Need two index's in [Row Size][Collumn Size] format
+  std::cout << cars[2][2] << "\n";
+  std::cout << "\n";
+
+  // Output a full 2D array
+  int rows = sizeof(cars) / sizeof(cars[0]);
+  int columns = sizeof(cars[0]) / sizeof(cars[0][0]);
+  for (int i = 0; i < rows; i++)
+  {
+    for (int j = 0; j < columns; j++)
+    {
+      std::cout << cars[i][j] << " ";
+    }
+    std::cout << '\n';
+  }
   return 0;
 }
