@@ -1,10 +1,8 @@
 #include <iostream>
 
-using str = std::string;
-
 int main()
 {
-  str name;
+  std::string name;
   while (name.empty())
   { // While x is true do y
     std::getline(std::cin, name);

@@ -1,12 +1,10 @@
 #include <iostream>
 
-using str = std::string;
-
 int main()
 {
 
-  str name;
-  str alias;
+  std::string name;
+  std::string alias;
 
   std::cout << "Alias: ";
   std::cin >> alias; // Normal Input (NO SPACES)

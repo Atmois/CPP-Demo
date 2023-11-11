@@ -1,8 +1,6 @@
 #include <ctime>
 #include <iostream>
 
-using str = std::string;
-
 int main() // Not truly random but close enough
 {
 

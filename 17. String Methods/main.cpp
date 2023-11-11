@@ -1,10 +1,9 @@
 #include <iostream>
 
-using str = std::string;
 
 int main() // Find more methods here -> https://cplusplus.com/reference/string/string/
 {
-    str name;
+    std::string name;
 
     std::getline(std::cin, name);
 

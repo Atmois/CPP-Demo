@@ -1,7 +1,5 @@
-#include <cmath>
 #include <iostream>
-
-using str = std::string;
+#include <cmath>
 
 int main()
 {

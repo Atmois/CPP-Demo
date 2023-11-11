@@ -1,11 +1,11 @@
 #include <iostream>
 
-using str = std::string;
+using string = std::string;
 
 int main()
 {
   // Type Alias Useage
-  str name = "Atmois";
+  string name = "Atmois";
 
   return 0;
 }

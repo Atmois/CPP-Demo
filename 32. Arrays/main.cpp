@@ -1,7 +1,5 @@
 #include <iostream>
 
-using str = std::string;
-
 double getTotal(double prices[], int size)
 {
   double total = 0;
@@ -108,10 +106,10 @@ int main()
   Fill() Function
   */
   const int itemsLimit = 10;
-  str items[itemsLimit];
+  std::string items[itemsLimit];
 
   fill(items, items + itemsLimit, "Placeholder"); // Where to being, where to end, what to fill
-  for (str item : items)
+  for (std::string item : items)
   {
     std::cout << item << " ";
   }
@@ -121,8 +119,8 @@ int main()
   /*
   Put inputs into arrays
   */
-  str foods[5];
-  str foodsTemp;
+  std::string foods[5];
+  std::string foodsTemp;
   int foodSize = sizeof(foods) / sizeof(foods[0]);
   for (int i = 0; i < foodSize; i++)
   {
@@ -148,7 +146,7 @@ int main()
   /*
   Multi-Dimension Arrays (2D)
   */
-  str cars[][3] = {// [Row Size][Collumn Size] // Only collumn size required
+  std::string cars[][3] = {// [Row Size][Collumn Size] // Only collumn size required
                    {"Mustang", "Escape", "F150"},
                    {"Corvette", "Equinox", "Silverado"},
                    {"Challanger", "Durang", "Ram"}};
