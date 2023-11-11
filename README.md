@@ -12,6 +12,7 @@ Any practise programs were excluded and the following changes to the structure w
 <br> ㅤ
 - 'Do While Loops(19)' was put under 'While Loops(18)'
 - 'Return(27)' was put under 'Functions(26)'
+- 'Null Pointers(48)' was put under 'Pointers(47)'
 <br> ㅤ
 - 'Iterate Over an Array(34)' was put under 'Arrays(32)'
 - 'For Each Loops(35)' was put under 'Arrays(32)'
