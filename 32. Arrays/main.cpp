@@ -43,6 +43,8 @@ void sortArray(double prices[], int size)
   }
 }
 
+
+
 int main()
 {
   double prices[10] = {1.99, 5.99, 7.99, 3.99, 8.99, 2.99, 4.99, 6.99, 9.99}; // Must all be the same data type - [10] sets list length limit to 10 - This CAN NOT be changed during runtime
