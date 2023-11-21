@@ -20,9 +20,9 @@ int main()
     std::string *pFoods = foods;  // You don't need '&' for arrays
     std::cout << *pFoods << "\n"; // Gives out first element in the array
 
-    int *pointer = nullptr; // Use this to make sure there are no issues, you can then reference it or assign values later on
+    int *pointer = NULL; // Use this to make sure there are no issues, you can then reference it or assign values later on
 
-    if(pointer == nullptr) // Check if pointer is null
+    if(pointer == NULL) // Check if pointer is null
     {
         std::cout << "Null Pointer";
     }
