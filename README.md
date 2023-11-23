@@ -14,6 +14,7 @@ Any practise programs were excluded and the following changes to the structure w
 - 'Return(27)' was put under 'Functions(26)'
 - 'Null Pointers(48)' was put under 'Pointers(47)'
 - 'Pass structs as args(54)' was put under 'Structs(53)'
+- 'Constructors(57)' was put under 'OOP(56)'
 <br> ㅤ
 - 'Iterate Over an Array(34)' was put under 'Arrays(32)'
 - 'For Each Loops(35)' was put under 'Arrays(32)'
