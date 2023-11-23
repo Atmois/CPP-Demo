@@ -17,7 +17,7 @@ int main()
   // Char - Single Character
   char letter = 'Z'; // Only single quotes
 
-  // Bool - True or False
+  // Bool - True or False - 1 = True / 0 = False
   bool boolean = true;
 
   // String - A string lol
