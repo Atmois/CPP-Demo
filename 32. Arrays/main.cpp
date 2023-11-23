@@ -32,8 +32,7 @@ void sortArray(double prices[], int size)
   {
     for (int j = 0; j < size - 1; j++)
     {
-      if (prices[j] >
-          prices[j + 1])
+      if (prices[j] > prices[j + 1])
       { // Change to less than to get in descending order
         tempValue = prices[j];
         prices[j] = prices[j + 1];
@@ -42,8 +41,6 @@ void sortArray(double prices[], int size)
     }
   }
 }
-
-
 
 int main()
 {
@@ -149,9 +146,9 @@ int main()
   Multi-Dimension Arrays (2D)
   */
   std::string cars[][3] = {// [Row Size][Collumn Size] // Only collumn size required
-                   {"Mustang", "Escape", "F150"},
-                   {"Corvette", "Equinox", "Silverado"},
-                   {"Challanger", "Durang", "Ram"}};
+                           {"Mustang", "Escape", "F150"},
+                           {"Corvette", "Equinox", "Silverado"},
+                           {"Challanger", "Durang", "Ram"}};
 
   std::cout << cars[0][0] << "\n"; // Need two index's in [Row Size][Collumn Size] format
   std::cout << cars[2][2] << "\n";
