@@ -22,7 +22,7 @@ void swapRef(int &x, int &y)
     y = temp;
 }
 
-int main()
+int main() // Note: You can do this with arrays, structs or variables
 {
     int x = 1;
     int y = 2;
