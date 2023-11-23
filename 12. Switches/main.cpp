@@ -6,7 +6,7 @@ int main()
   int month;
   std::cin >> month;
 
-  switch (month)
+  switch (month) // Only works with char's or int/double
   {
   case 1: // Same as if month = 1
     std::cout << "Jan";
